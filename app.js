@@ -27,14 +27,6 @@ app.get('/', routes.index);
 
 //establish connection to database
 db.connect(function() {
-  // http.createServer(app).listen(app.get('port'), function(){
-  //   console.log('Express server listening on port ' + app.get('port'));
-  // });
   // launch the Bay Area Bike Share scraper;
   scrapers.BABS();
 });
-
-//scrapers.BABS();
-
-
-

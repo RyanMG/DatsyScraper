@@ -1,9 +1,9 @@
 var pg = require('pg');
 var credentials = require('./dbconfig.json').db;
 
-var conString = 'postgres://'+ credentials.username + ':' + credentials.password + '@' + credentials.localhost + '/' + credentials.name;
+var connectionString = 'postgres://'+ credentials.username + ':' + credentials.password + '@' + credentials.localhost + '/' + credentials.name;
 
-var client = new pg.Client(conString);
+var client = new pg.Client(connectionString);
 
 exports.connect = function(callback) {
   client.connect(function(err) {

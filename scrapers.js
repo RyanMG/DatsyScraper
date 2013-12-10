@@ -35,44 +35,44 @@ var writeNewData = function(data) {
     console.log(row);
     row.executionTime = data.executionTime;
     var query = "INSERT INTO stationstatuses ("
-      + "executiontime," 
+      + "executiontime,"
       + "stationid,"
       + "stationname,"
-      + "availabledocks," 
+      + "availabledocks,"
       + "totaldocks,"
       + "latitude,"
-      + "longitude," 
-      + "statusvalue," 
+      + "longitude,"
+      + "statusvalue,"
       + "statuskey,"
-      + "availablebikes," 
+      + "availablebikes,"
       + "staddress1,"
       + "staddress2,"
       + "city,"
-      + "postalcode," 
+      + "postalcode,"
       + "location,"
       + "altitude,"
-      + "teststation," 
+      + "teststation,"
       + "lastcommunicationtime,"
       + "landmark"
       + ") VALUES (" +
-      "'" + row.executionTime + "'," + 
-      row.id + "," + 
-      "'" + row.stationName + "'," + 
-      row.availableDocks + "," + 
-      row.totalDocks + "," + 
-      row.latitude + "," + 
-      row.longitude + "," + 
-      "'" + row.statusValue + "'," + 
-      row.statusKey + "," + 
-      row.availableBikes + "," + 
-      "'" + row.stAddress1 + "'," + 
-      "'" + row.stAddress2 + "'," + 
-      "'" + row.city + "'," + 
+      "'" + row.executionTime + "'," +
+      row.id + "," +
+      "'" + row.stationName + "'," +
+      row.availableDocks + "," +
+      row.totalDocks + "," +
+      row.latitude + "," +
+      row.longitude + "," +
+      "'" + row.statusValue + "'," +
+      row.statusKey + "," +
+      row.availableBikes + "," +
+      "'" + row.stAddress1 + "'," +
+      "'" + row.stAddress2 + "'," +
+      "'" + row.city + "'," +
       "'" + row.postalCode + "'," +
-      "'" + row.location + "'," + 
-      "'" + row.altitude + "'," + 
-      row.testStation + "," + 
-      row.lastCommunicationTime + "," + 
+      "'" + row.location + "'," +
+      "'" + row.altitude + "'," +
+      row.testStation + "," +
+      row.lastCommunicationTime + "," +
       "'" + row.landMark + "'" +
       ");";
     db.insertNewData(query);
